@@ -7,3 +7,23 @@
 /build
 /captures
 .externalNativeBuild
+.idea
+/captures
+
+#OSX files
+.DS_Store
+
+# Local Configuration file(sdk path, etc)
+
+local.properties
+gradle.properties
+
+
+#generated files
+
+bin/
+gen/
+
+# Built application files
+*.apk
+*.ap_
