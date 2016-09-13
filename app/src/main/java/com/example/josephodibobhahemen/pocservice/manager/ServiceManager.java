@@ -25,7 +25,7 @@ public class ServiceManager {
     private OkHttpClient mOkHttpClient;
     private Retrofit.Builder mBuilder;
 
-    public static final String BaseURL = "https://"; // provide your endpoint
+    public static final String BaseURL = "https://api.github.com/"; // provide your endpoint
 
 
     /**

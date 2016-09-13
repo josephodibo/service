@@ -9,6 +9,7 @@ import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
+import retrofit2.http.Path;
 
 /**
  * Created by josephodibobhahemen on 9/13/16.
@@ -17,8 +18,8 @@ import retrofit2.http.GET;
 public class TestService {
 
     interface TestApi {
-        @GET("api/test/service/user")
-        Call<List<String>> getUsers();
+        @GET("users/{user}/users")
+        Call<List<String>> getUsers(@Path("user") String user);
     }
 
     TestApi api;
@@ -33,7 +34,7 @@ public class TestService {
     }
 
     public void getTestUser(String operationId) {
-        Call<List<String>> call = api.getUsers();
+        Call<List<String>> call = api.getUsers("josephodibo");
         call.enqueue(new CustomCallBack<List<String>>(operationId));
     }
 }
