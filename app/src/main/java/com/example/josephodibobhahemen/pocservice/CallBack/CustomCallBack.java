@@ -45,8 +45,4 @@ public class CustomCallBack<T> implements Callback<T> {
         }
 
     }
-
-    public String getOperationId() {
-        return operationId;
-    }
 }
