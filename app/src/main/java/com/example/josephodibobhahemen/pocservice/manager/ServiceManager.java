@@ -50,6 +50,9 @@ public class ServiceManager {
     }
 
 
+    /**
+     * Initialize.
+     */
     void initialize() {
         initilizeOkHttp();
         initilizeRetrofitBuilder();
