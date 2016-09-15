@@ -5,7 +5,6 @@ import com.google.gson.FieldNamingPolicy;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import java.security.NoSuchAlgorithmException;
 import java.util.concurrent.TimeUnit;
 
 import okhttp3.OkHttpClient;
@@ -19,7 +18,6 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ServiceManager {
 
-    public static final int T = 60;
     public static final int TIMEOUT = 60;
     private  static ServiceManager _instance;
     private OkHttpClient mOkHttpClient;
